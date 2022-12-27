@@ -1,9 +1,12 @@
+import styles from "./App.module.css";
 import Title from "./js/Title";
+import DiceMain from "./js/DiceMain";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Title />
+      <DiceMain />
     </div>
   );
 }
