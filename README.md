@@ -1,6 +1,6 @@
 # Project introduce
 
-<br/>this is my first react project  
+<br/>this is my first react project
 <br/>react で作る初めてのプロジェクトです
 <br/>첫 리액트 프로젝트 입니다
 
