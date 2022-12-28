@@ -1,10 +1,11 @@
 import styles from "../css/DiceMain.module.css";
-import diceMain from "../img/dice.jpg";
+import Btn from "./Btn"
+import {str} from './Btn'
 
 function DiceMain() {
   return (
     <div className={styles.DiceMain}>
-      <img src={diceMain} />
+      <span className={styles.DiceValue}>{str}</span>
     </div>
   );
 }
