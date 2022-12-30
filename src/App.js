@@ -8,6 +8,7 @@ function App() {
       <Title />
       <DiceMain />
     </div>
+    
   );
 }
 
