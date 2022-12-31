@@ -1,8 +1,8 @@
 import styles from "../css/Btns.module.css";
 
-function Btns({onClick}) {
+function Btns({btnName, onClick}) {
   return (
-      <button className={styles.Btns} onClick={onClick}>secondBtn</button>
+      <button className={styles.Btns} onClick={onClick}>{btnName}</button>
   );
 }
 

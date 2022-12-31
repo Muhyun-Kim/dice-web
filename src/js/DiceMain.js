@@ -1,6 +1,7 @@
 import styles from "../css/DiceMain.module.css";
 import { useState } from "react";
 import Btns from "./Btns";
+import TextBox from "./TextBox";
 
 function DiceMain() {
   //サイコロに表示されるfunctionを作る
@@ -10,8 +11,15 @@ function DiceMain() {
     setDice(Math.floor(Math.random() * valueDice.length) + 1);
   return (
     <div className={styles.DiceMain}>
-      <span className={styles.DiceValue}>{dice}</span>
-      <Btns onClick={rollDice} />
+      {/* サイコロの結果表示 */}
+      <div className={styles.DiceValue}>
+        <span>{dice}</span>
+      </div>
+      {/* rollボタン、サイコロの数入力欄 */}
+      <div className={styles.DiceInputBox} >
+        <Btns btnName="roll" onClick={rollDice} />
+        <TextBox />
+      </div>
     </div>
   );
 }
