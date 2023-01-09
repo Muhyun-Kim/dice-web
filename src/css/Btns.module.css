@@ -1,6 +1,7 @@
 .Btns {
   background-color: black;
   display: block;
+  align-items: center;
   margin-top: 50px;
   color: white;
   width: 20%;

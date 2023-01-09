@@ -22,8 +22,8 @@ function DiceMain() {
       </div>
       {/* rollボタン、サイコロの数入力欄 */}
       <div className={styles.DiceInputBox}>
-        <Btns btnName="roll" onClick={rollDice} />
         <DiceNumBox value={numDice} onChange={changeNumDice} />
+        <Btns btnName="roll" onClick={rollDice} />
       </div>
     </div>
   );

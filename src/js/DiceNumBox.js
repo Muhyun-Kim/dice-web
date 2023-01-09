@@ -1,11 +1,11 @@
 import styles from "../css/DiceNumBox.module.css";
 import { useState } from "react";
 
-function DiceNumBox({onChange, value}) {
+function DiceNumBox({ onChange, value }) {
   return (
-    <form>
+    <form className={styles.DiceNumBox}>
       <label>
-        Number of Dice:
+        サイコロの数:
         <input
           onChange={onChange}
           value={value}
